@@ -1,0 +1,76 @@
+/* Flex container for logo and title */
+body{
+    font-family: 'Santander Headline W05 Bold', sans-serif;
+}
+@font-face {
+    font-family: 'Santander Headline W05 Bold';
+    src: url("fonts/SantanderTitulo.woff2") format("woff2"),
+       url("fonts/SantanderTitulo.woff") format("woff");
+         
+    font-weight: bold;
+    font-style: normal;
+}
+
+.logo-titulo {
+    padding-left: 2vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.top{
+    padding: 2vh 2vh 0 0vh;
+    background-color: #fe0000;
+    color: white;
+}
+img{
+    height: 5vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;    
+    align-items: flex-end;
+}
+
+.apartado{
+    color: white;
+    width: 100px;
+    height: 50px;
+    justify-items: center;
+    align-content: center;
+    border: solid 2px black;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.apartado:hover {
+    transform: scale(1.05);
+}
+
+.hueco{
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 110vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.bloque{
+    height: 50vh;
+    width: 100%;
+    margin: 20px auto;
+    padding: 5vh;
+    justify-content: center;
+    background-color: lightgrey;
+}
