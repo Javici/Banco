@@ -1,4 +1,4 @@
-/* Flex container for logo and title */
+
 body{
     font-family: 'Santander Headline W05 Bold', sans-serif;
 }
@@ -22,7 +22,7 @@ body{
     background-color: #fe0000;
     color: white;
 }
-img{
+.logo{
     height: 5vh;
 }
 
@@ -38,12 +38,14 @@ img{
     color: white;
     width: 100px;
     height: 50px;
-    justify-items: center;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid 2px black;
     margin: 0;
     padding: 0;
     transition: transform 0.2s ease;
+    border-radius: 10px;
 }
 
 .apartado:hover {
