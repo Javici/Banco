@@ -1,4 +1,3 @@
-
 const password = "1234";
 const username = "Javier";
 const PassCheck = document.getElementById("contrasena");
@@ -19,23 +18,26 @@ if (acceder && PassCheck && UserCheck && msg) {
   acceder.addEventListener("click", check);
 }
 
-
 let saldo = 15000;
 
-const dineroTransferido = document.getElementById("transferido");
+const dineroRetirado = document.getElementById("retirado");
 const dineroInicial = document.querySelector(".dineroInicial");
 const total = document.querySelector(".total");
-const transferirBtn = document.getElementById("transferir");
+const retirarBtn = document.getElementById("retirar");
+
+const dineroIntroducido = document.getElementById("introducido");
+const introducirBtn = document.getElementById("introducir");
+const total2 = document.querySelector(".total2");
 
 if (dineroInicial) {
   dineroInicial.innerText = "Dinero: " + saldo + " €";
 }
 
-function transferir() {
-  if (!dineroTransferido || !dineroInicial || !total) return;
-  const cantidad = parseFloat(dineroTransferido.value);
+function retirar() {
+  if (!dineroRetirado || !dineroInicial || !total) return;
+  const cantidad = parseFloat(dineroRetirado.value);
   if (isNaN(cantidad) || cantidad <= 0) {
-    alert("Introduce una cantidad válida para transferir.");
+    alert("Introduce una cantidad válida para retirar.");
     return;
   }
   if (cantidad > saldo) {
@@ -43,11 +45,34 @@ function transferir() {
     return;
   }
   saldo -= cantidad;
-  total.innerText = "Transferencia realizada. Dinero total: " + saldo + " €";
+  total.innerText = "Retirada realizada. Dinero total: " + saldo + " €";
   dineroInicial.innerText = "Dinero: " + saldo + " €";
-  dineroTransferido.value = "";
+  dineroRetirado.value = "";
+  setTimeout(() => {
+    total.innerText = "";
+  }, 4000);
 }
 
-if (transferirBtn && dineroTransferido && dineroInicial && total) {
-  transferirBtn.addEventListener("click", transferir);
+function introducir() {
+  if (!dineroIntroducido || !dineroInicial || !total2) return;
+  const cantidad = parseFloat(dineroIntroducido.value);
+  if (isNaN(cantidad) || cantidad <= 0) {
+    alert("Introduce una cantidad válida para introducir.");
+    return;
+  }
+  saldo += cantidad;
+  total2.innerText = "Dinero introducido. Dinero total: " + saldo + " €";
+  dineroInicial.innerText = "Dinero: " + saldo + " €";
+  dineroIntroducido.value = "";
+  setTimeout(() => {
+    total2.innerText = "";
+  }, 4000);
+}
+
+if (retirarBtn && dineroRetirado && dineroInicial && total) {
+  retirarBtn.addEventListener("click", retirar);
+}
+
+if (introducirBtn && dineroIntroducido && dineroInicial && total2) {
+  introducirBtn.addEventListener("click", introducir);
 }

@@ -9,6 +9,9 @@ body {
   font-weight: bold;
   font-style: normal;
 }
+a {
+  color: white;
+}
 
 .logo-titulo {
   padding-left: 2vh;
@@ -20,11 +23,6 @@ body {
   padding: 2vh 2vh 0 0vh;
   background-color: #fe0000;
   color: white;
-  width: 100vw;
-  	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
 }
 .logo {
   height: 5vh;
