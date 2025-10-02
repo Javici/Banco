@@ -1,0 +1,76 @@
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg/1200px-View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Santander Headline W05 Bold", sans-serif;
+}
+.center-title-container {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-title {
+  position: static;
+  font-size: 2.5em;
+  font-family: "Santander Headline W05 Bold", sans-serif;
+  color: #fe0000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 1;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff, 0px 1px 0 #fff, 1px 0px 0 #fff, 0px -1px 0 #fff,
+    -1px 0px 0 #fff;
+}
+
+.login-container {
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #fff;
+  padding: 2em 2em 2em 2em;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  gap: 0.7em;
+}
+.login-container label {
+  align-self: flex-start;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+.login-container input {
+  width: 200px;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.login-container button {
+  width: 100%;
+  padding: 0.6em;
+  background: #fe0000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+.login-container button:hover {
+  background: #c80000;
+}

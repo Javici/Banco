@@ -1,48 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    <div class="top">
-        <div class="logo-titulo">
-            <img class="logo" src="img/logosantande.png" alt="">
-            <h1>Banco Santander</h1>
-        </div>
-    <div class="header">
-        
-        
-        <div class="apartado">
-            <h4>Dinero</h4>
-        </div>
-        <div class="apartado">
-            <h4>Clientes</h4>
-        </div>
-        <div class="apartado">
-            <h4>Transferencia</h4>
-        </div>
-        <div class="apartado">
-            <h4>Seguros</h4>
-        </div>
-        <div class="apartado">
-            <h4>Contratar
-                </h4>
-            </div>
-        
-            <div class="hueco"></div>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="center-title-container">
+      <div class="center-title">Banco Santander</div>
     </div>
+    <div class="login-container">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" />
+      <label for="contrasena">Contraseña</label>
+      <input type="text" id="contrasena" />
+      <button id="acceder">Acceder</button>
+      <p id="msg"></p>
     </div>
-    <div class="contenedor">
-        <div class="bloque">
-            <h3>informacion</h3>
-            
-        </div>
-        <div class="bloque">
-            <h3>mas informacion</h3>
-        </div>
-    </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
