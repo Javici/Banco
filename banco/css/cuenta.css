@@ -78,3 +78,9 @@ a {
   justify-content: center;
   background-color: lightgrey;
 }
+
+.tarjeta {
+  height: 10vh;
+  border-radius: 7.5px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}

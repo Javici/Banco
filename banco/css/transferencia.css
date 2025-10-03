@@ -120,4 +120,5 @@ body {
 .volver-btn:hover {
   background: #fe0000;
   color: #fff;
+  border: solid 2px white;
 }
