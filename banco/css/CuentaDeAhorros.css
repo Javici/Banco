@@ -1,3 +1,13 @@
+.graficoahorro {
+  display: block;
+  max-width: 50vh;
+
+  margin: 0 auto 1.5rem auto;
+}
+.titulo-ahorros {
+  align-self: center;
+  text-align: center;
+}
 @font-face {
   font-family: "SantanderRegular";
   src: url("../fonts/SantanderRegular.woff2") format("woff2"),
@@ -7,19 +17,6 @@
   font-style: normal;
   font-display: swap;
 }
-.contenedores-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  gap: 4rem;
-  width: 100vw;
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -31,13 +28,13 @@ body {
   background: #f5f5f5;
   font-family: "SantanderRegular", Arial, sans-serif;
 }
-
 .header {
+  height: 8vh;
   width: 100vw;
   background: #fe0000;
   color: #fff;
   text-align: center;
-  padding: 1.5rem 0 0.5rem 0;
+  padding: 3rem 0 0.5rem 0;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -46,66 +43,14 @@ body {
   left: 0;
   z-index: 10;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 0.2rem;
 }
-
-.contenedor {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  padding: 2.5rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1 1 0;
-  min-width: 280px;
-  min-height: 340px;
-  margin: 0 10vh 0 10vh;
-}
-
-.dineroInicial {
-  font-size: 1.1rem;
-  margin: 0.3rem 0 0.2rem 0;
-  font-weight: normal;
-  letter-spacing: 0;
-}
-.total {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-.recuadro {
-  padding: 0.5rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  width: 180px;
-}
-
-.boton {
-  background: #fe0000;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.boton:hover {
-  background: #b71c1c;
-}
-
 .volver-btn {
   margin-top: 1.5rem;
   position: absolute;
   left: 2vw;
-  top: 1vh;
+  top: 2vh;
   background: #fff;
   color: #fe0000;
   border: 2px solid #fe0000;
@@ -121,4 +66,42 @@ body {
   background: #fe0000;
   color: #fff;
   border: solid 2px white;
+}
+.contenedor {
+  width: 110vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.bloque {
+  height: 55vh;
+  width: 100%;
+  margin: 20px auto;
+  padding: 8vh;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.info-ahorros {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1 1 0;
+  min-width: 220px;
+}
+.grafico {
+  display: block;
+  max-width: 68vh;
+  max-height: 85vh;
+  object-fit: contain;
+  margin: auto 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }

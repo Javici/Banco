@@ -38,7 +38,7 @@ a {
 
 .apartado {
   color: white;
-  width: 100px;
+  width: 150px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -75,8 +75,28 @@ a {
   width: 100%;
   margin: 20px auto;
   padding: 5vh;
-  justify-content: center;
   background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.bloque-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15vh;
+}
+
+.bloque-img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  height: 100%;
+  margin-right: 15vh;
 }
 
 .tarjeta {
